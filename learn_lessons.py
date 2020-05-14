@@ -53,16 +53,77 @@
 
 ###Dictionaries
 
-friends = {'name': 'Friends', 'genre': 'sitcom', 'no_of_seasons': 10}
-print(friends['no_of_seasons']) #10
+# friends = {'name': 'Friends', 'genre': 'sitcom', 'no_of_seasons': 10}
+# print(friends['no_of_seasons']) #10
 
-##adding a key
-friends['no_of_episodes'] = 236
-friends['best_episode'] = 'The One With The Cake'
+# ##adding a key
+# friends['no_of_episodes'] = 236
+# friends['best_episode'] = 'The One With The Cake'
 
-##delete a key value pair
-del friends['best_episode']
-print(friends)
+# ##delete a key value pair
+# del friends['best_episode']
+# print(friends)
 
-friends['creators'] = ['David Crane', 'Marta Kauffman']
+# friends['creators'] = ['David Crane', 'Marta Kauffman']
+
+###LOOPS
+# zero_to_three = [0, 1, 2, 3, 4]
+
+# for number in zero_to_three:
+#     print(number)
+
+# countries = ['Croatia', 'USA', 'Argentina', 'France', 'Brazil', 'Japan', 'Vietnam', 'Israel']
+# cities = ['Zagreb', 'District of Columbia', 'Buenos Aires', 'Paris', 'Rio de Janeiro', 'Tokyo', 'Hanoi', 'Tel Aviv']
+
+# for index in list(range(0, len(countries))):
+#     print(cities[index]+",", countries[index])
+
+# example_dictionary = {'first_name': "Terrance", 'last_name': "KOAR", 'favorite_language': "Python"}
+# for key, value in example_dictionary.items():
+#     print("this is the key:", key)    
+#     print("this is the value:", value, "\n")
+
+# first_name = ""
+# last_name = ""
+# for key, value in example_dictionary.items():
+#     if key == "last_name":
+#         last_name = value.title()
+#     if key == "first_name":
+#         first_name = value
+# print(first_name, last_name)
+
+### Functions
+# new_employees = ['steven', 'jan', 'meryl']
+# def greet_employees():
+#     welcome_messages = []
+#     for new_employee in new_employees:
+#         welcome_messages.append("Hi " + new_employee.title() + ", I'm so glad to be working with you!" )
+
+#     return welcome_messages
+
+# print(greet_employees())
+
+
+### Conditionals
+# def vacation_length(number_of_days):
+#     if number_of_days > 4:
+#         return 'that is a long vacation'
+#     else:
+#         return 'not so long'
+
+# print(vacation_length(1))
+
+# print(bool(0)) 
+# print(bool(7))
+
+# def open_restaurants(restaurants):
+#     open = []
+#     for restaurant in restaurants:
+#         if restaurant['is_closed'] == False:
+#             open.append(restaurant)       
+#     return open
+
+
+
+
 
