@@ -124,6 +124,29 @@
 #     return open
 
 
+# The general syntax of a filter() function is given as:
+# filter ( function, iterable )
+# def is_even(number):
+#     return number % 2 == 0
 
+# numbers = list(range(0, 11))
+# print(list(filter(is_even, numbers)))
 
+# #A map() function is defined in python like this:
+# # map(Function, Sequence)
+# #The first argument is the altering function, which operates on each element 
+# #by passing through the element as an argument and returning a value. 
+# #The second argument is the list of elements to be iterated through and operated on. 
+# #The return values of the altering function are appended to a new list, which is returned 
+# #after we coerce our map object into a list.
 
+# list(map(add_simpson, names))
+
+# lambda can be used to define a custom function
+numbers = [1, 3, 8, 9, 11, 20]
+print(list(map(lambda x: x + 5, numbers)))
+
+names = list(map(lambda restaurant: restaurant['name'], restaurants))
+
+def cheapest_restaurants(restaurants):
+    return list(filter(lambda restaurant: restaurant['price'] == 1, restaurants))
